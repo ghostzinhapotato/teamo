@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>i love u</title> 
+    <link rel="stylesheet" type="text/css" href="bonito.css">
+    
+    <script> 
+        function redirecionar(resposta) {
+            if (resposta === 'sim!') {
+                window.location.href = 'https://www.youtube.com/watch?v=uwjkgChj4JU';
+            } else if (resposta === 'não') {
+                window.location.href = 'https://www.youtube.com/watch?v=S4EtvnHyz0U'; 
+            }
+        }
+
+        function mostrarAviso() {
+            var caixaAviso = document.getElementById("caixa-aviso");
+            caixaAviso.style.display = "block";
+        }
+
+        function fecharAviso() {
+            var caixaAviso = document.getElementById("caixa-aviso");
+            caixaAviso.style.display = "none";
+        }
+    </script> 
+</head> 
+
+<body class="body"> 
+   <div class="fundotodo">
+        <h1>Mi deixa ir na sua casa sábado?</h1> 
+        <img src="img/fofo.gif">
+        <div class="caixa-botao">
+            <button class="botao-verificar" onclick="redirecionar('sim!')">sim!</button> 
+            <button class="botao-dica" onclick="redirecionar('não')">não</button>
+        </div>
+    </div>
+</body> 
+</html>
+
